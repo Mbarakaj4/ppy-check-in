@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form method="POST" action="/submit">
+        {% csrf_token %}
+        <label for="cedula_identidad">Ingrese su numero de cedula:</label>
+        <input type="number" name="cedula_identidad"> 
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
